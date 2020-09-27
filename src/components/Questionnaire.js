@@ -24,6 +24,7 @@ class Questionnaire extends Component {
         error: null
     }
 
+    //build FHIR QuestionnaireResponse -- included required fields and printed to console
     buildQuestionnaireResponse() {
         const item = [
             {
@@ -102,6 +103,7 @@ class Questionnaire extends Component {
         console.log(JSON.stringify(response))
     }
 
+    //validate inputs and then build FHIR response
     handleSubmit(event) {
         event.preventDefault()
 
@@ -162,6 +164,8 @@ class Questionnaire extends Component {
         this.buildQuestionnaireResponse()
     }
 
+
+    //handles changes in input elements
     handleChange(event) {
         const target = event.target
         const val = target.type === 'checkbox' ? target.checked : target.value
@@ -261,12 +265,15 @@ class Questionnaire extends Component {
                         value='Submit'
                     ></input>
                 </form>
+
+                {/* If submitting the form returns a validation error, display it */}
                 {this.state.error? 
                 <div>
                     {this.state.error}
                 </div> 
                 :null}
 
+                {/* If submitting the form was successful, display the results -- snapshot ensures results do not change when input fields change*/}
                 {this.state.submitSuccess? 
                     <div>
                         <h3>Questionnaire Results</h3>
