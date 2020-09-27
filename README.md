@@ -1,30 +1,16 @@
-# HAPI FHIR Playground: Basic Test App
-
-This project is a skeleton project for querying data from the [HAPI FHIR public test server](http://hapi.fhir.org/baseR4)
-
-### Getting Started:
-
-- [ ] Take a few minutes to familiarize yourself with the [FHIR Standard](http://hl7.org/fhir/) for health data exchange. In particular you might want to read the [Executive Summary](http://hl7.org/fhir/summary.html) and the [Developer Introduction](http://hl7.org/fhir/overview-dev.html)
-
-- [ ] In addition, take a few minutes to familiarize yourself with [React](https://reactjs.org/docs/getting-started.html).
-
-- [ ] Please don't fork this repository. Clone this repository and set the git remote to your copy of the github repository and push it there.
-
-- [ ] Run `npm install` to install depedencies and `npm start` to start the project. App runs on `http://localhost:3000/`
-
 ### Basic Tasks:
 
-- [ ] Add a `Table` class component and populate it with results from the `getPatients()` function.
+- [X] Add a `Table` class component and populate it with results from the `getPatients()` function.
 
-- [ ] Sort the table based on youngest birthdate to oldest.
+- [X] Sort the table based on youngest birthdate to oldest.
 
-* [ ] Add a search function to the page. Add two inputs to `Table` component - a textbox that takes in a name (it can be the first or last name of a patient), and a date picker for date of birth. Modify the query and function `getPatients()` to include search results for a `Patient` based on the name passed in, and the date of birth passed in from the date picker. The results should be reflected in the table. Use the [SearchParameters section](https://www.hl7.org/fhir/patient.html#search) to help with building your query. 
+* [X] Add a search function to the page. Add two inputs to `Table` component - a textbox that takes in a name (it can be the first or last name of a patient), and a date picker for date of birth. Modify the query and function `getPatients()` to include search results for a `Patient` based on the name passed in, and the date of birth passed in from the date picker. The results should be reflected in the table. Use the [SearchParameters section](https://www.hl7.org/fhir/patient.html#search) to help with building your query. 
 
-* [ ] Apply validation to the inputs - the name box cannot contain non-alphabetic characters, and the date field must be a valid date structure (YYYY/MM/DD).
+* [X] Apply validation to the inputs - the name box cannot contain non-alphabetic characters, and the date field must be a valid date structure (YYYY/MM/DD).
 
-* [ ] Output the time the request was made on the page to show the results are as of that time. Display in the following format `Mon 06 Mar 2017 at 00:00:00`. For example, `Results as of Mon 06 Mar 2017 at 00:00:00`
+* [X] Output the time the request was made on the page to show the results are as of that time. Display in the following format `Mon 06 Mar 2017 at 00:00:00`. For example, `Results as of Mon 06 Mar 2017 at 00:00:00`
 
-* [ ] Commit your work.
+* [X] Commit your work.
 
 ### Intermediate Tasks:
 
