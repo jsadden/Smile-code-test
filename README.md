@@ -14,29 +14,29 @@
 
 ### Intermediate Tasks:
 
-- [ ] Add `Questionnaire` componenent, generate a form using the `questionnaire.json` file in the `assets` folder. The form should have validation applied to each input and form input elements should be controlled component.
+- [X] Add `Questionnaire` componenent, generate a form using the `questionnaire.json` file in the `assets` folder. The form should have validation applied to each input and form input elements should be controlled component.
 
-- [ ] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
+- [X] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
 
-- [ ] Display your results in a neat and clean manner.
+- [X] Display your results in a neat and clean manner.
 
-- [ ] Update the `Questionnaire` Component to be mobile-friendly.
+- [X] Update the `Questionnaire` Component to be mobile-friendly.
 
-- [ ] Please include unit tests for your work.
+- [X] Please include unit tests for your work.
 
-- [ ] Commit your work.
+- [X] Commit your work.
 
 ### Advanced Tasks:
 
-- [ ] Refactor `Practitioner` class component into functional component using [React hooks](https://reactjs.org/docs/hooks-intro.html).
+- [X] Refactor `Practitioner` class component into functional component using [React hooks](https://reactjs.org/docs/hooks-intro.html).
 
-- [ ] Add `PractitionerCard` component, display the each practitioner in card format, display data in proper format. ie. Date of birth in (YYYY/MM/DD) format, replace `undefined` value with `N/A`. Add Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
+- [X] Add `PractitionerCard` component, display the each practitioner in card format, display data in proper format. ie. Date of birth in (YYYY/MM/DD) format, replace `undefined` value with `N/A`. Add Typechecking with [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 
-- [ ] Display loading state until the request is not complete.
+- [X] Display loading state until the request is not complete.
 
-- [ ] Add a delete button in `PractitionerCard`, should ask for confirmation when clicked. Remove the particular `Practitioner` when confirmed. Note: No need to make server request.
+- [X] Add a delete button in `PractitionerCard`, should ask for confirmation when clicked. Remove the particular `Practitioner` when confirmed. Note: No need to make server request.
 
-- [ ] Add [`ErrorBoundary`](https://reactjs.org/docs/error-boundaries.html) component, use this component to make sure it catches the javascript errors thrown from `Practitioner` component.
+- [X] Add [`ErrorBoundary`](https://reactjs.org/docs/error-boundaries.html) component, use this component to make sure it catches the javascript errors thrown from `Practitioner` component.
 
 - [ ] Commit your work.
 
