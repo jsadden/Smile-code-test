@@ -38,6 +38,6 @@
 
 - [X] Add [`ErrorBoundary`](https://reactjs.org/docs/error-boundaries.html) component, use this component to make sure it catches the javascript errors thrown from `Practitioner` component.
 
-- [ ] Commit your work.
+- [X] Commit your work.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
