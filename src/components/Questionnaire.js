@@ -177,7 +177,7 @@ class Questionnaire extends Component {
 
     render() {
         return (
-            <div>
+            <div className='questionnaire'>
                 <form onSubmit={(e) => this.handleSubmit(e)}>
                     <h3>Allergies</h3>
                     <div>
@@ -263,12 +263,13 @@ class Questionnaire extends Component {
                     <input
                         type='submit'
                         value='Submit'
+                        className='submitquestionnaire'
                     ></input>
                 </form>
 
                 {/* If submitting the form returns a validation error, display it */}
                 {this.state.error? 
-                <div>
+                <div className='error'>
                     {this.state.error}
                 </div> 
                 :null}
@@ -277,7 +278,7 @@ class Questionnaire extends Component {
                 {this.state.submitSuccess? 
                     <div>
                         <h3>Questionnaire Results</h3>
-                        <div>
+                        <div className='questionnaireresult'>
                             Do you have allergies? 
                         </div>
                         <div>
@@ -285,7 +286,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             What is your gender? 
                         </div>
                         <div>
@@ -293,7 +294,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             What is your date of birth? 
                         </div>
                         <div>
@@ -301,7 +302,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             What is your country of birth? 
                         </div>
                         <div>
@@ -309,7 +310,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             What is your marital status? 
                         </div>
                         <div>
@@ -317,7 +318,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             Do you smoke? 
                         </div>
                         <div>
@@ -325,7 +326,7 @@ class Questionnaire extends Component {
                         </div>
                         <br/>
 
-                        <div>
+                        <div className='questionnaireresult'>
                             Do you drink alchohol? 
                         </div>
                         <div>

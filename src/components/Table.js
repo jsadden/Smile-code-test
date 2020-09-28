@@ -58,18 +58,18 @@ class Table extends Component {
     render() {
 
         return(
-            <div>
+            <div className='table'>
                 <div>
                     {/* Search form */}
                     <form onSubmit={(e) => this.updateSearch(e)}>
                         <input placeholder="Name" value={this.state.searchName} onChange={(e) => this.handleNameChange(e)}></input>
                         <input type='date' value={this.state.searchDate} onChange={(e) => this.handleDateChange(e)}></input>
-                        <input type='submit' value='Search'></input>
+                        <input type='submit' value='Search' className='searchbutton'></input>
                     </form>
                     
                     {/* Displays errors from search form if they exist */}
                     {this.state.errors? 
-                        <div>
+                        <div className='error'>
                             {this.state.errors}
                         </div>
                     :null}
@@ -78,7 +78,7 @@ class Table extends Component {
                 
                 {/* Displays formatted timestamp if it exists */}
                 {this.state.timestamp? 
-                    <div>
+                    <div className='timestamp'>
                         Results as of: {this.state.timestamp.slice(0, -12)} at {this.state.timestamp.slice(-12,-3)}
                     </div>
                 :null}

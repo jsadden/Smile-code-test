@@ -24,7 +24,7 @@ class PractitionerCard extends Component {
 
     render() {
         return (
-            <div>
+            <div className='practitionercard'>
                 <img
                     src={this.state.data.photo}
                     alt="Avatar"
@@ -34,9 +34,9 @@ class PractitionerCard extends Component {
                 <div>Gender: {this.state.data.gender}</div>
                 <div>DOB: {this.state.data.dob}</div>
                 
-                {/* Require confirmation if delete buttin is clicked */}
+                {/* Require confirmation if delete button is clicked */}
                 {this.state.deletePending? 
-                    <div>
+                    <div className='deleteconfirm'>
                         <div>Are you sure you want to delete this practitioner?</div>
                         <button onClick={() => this.deletePractitioner()}>Yes</button>
                         <button onClick={() => this.setState({deletePending: false})}>Cancel</button>

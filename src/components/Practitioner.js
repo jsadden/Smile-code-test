@@ -58,7 +58,7 @@ const Practitioner = () => {
 
   return(
 
-    <div>
+    <div className='practitioner'>
         {/* Return loading message if practitioner request is unresolved */}
         {loading ? 
           <div>
@@ -68,7 +68,7 @@ const Practitioner = () => {
           <div>
             
 
-            <button onClick={() => crashMe()}>Click me to test ErrorBoundary</button>
+            <button className='crashbutton' onClick={() => crashMe()}>Click me to test ErrorBoundary</button>
             
             {practitioners.map((practitioner) => (
               <PractitionerCard data={practitioner} key={practitioner.id} deleteMe={handlePractitionerDelete}/>
